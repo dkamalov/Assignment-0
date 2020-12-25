@@ -1,19 +1,16 @@
 function titleCaseEdit(title) {
 
-  //title.toLowerCase().split(" ");
+//Split into array 
+  let t = title.split(' ');
 
-  let s = " ";
+  for (let i = 0; i < t.length; i++) {
 
-  String(title).charAt(0).toUpperCase();
-
-  for(let i = 0; i < String(title).length; i++){
-
-    if(String(title).charAt(i) === s){
-      String(title).charAt(i+1).toUpperCase();
-    }
-
+//Capitilize the first one
+      t[i] = t[i].charAt(0).toUpperCase() + t[i].substring(1);     
   }
-  return String(title);
+
+//Put it back into a string
+  return t.join(' '); 
 }
 // Do not edit this line;
 module.exports = titleCaseEdit;
