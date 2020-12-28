@@ -6,8 +6,8 @@ function countOfAllIndexMatchingNumbers(nums) {
 
         if(nums[i] === i){
             count++;
-         }
     }
+ }
 return count;
 }
 
