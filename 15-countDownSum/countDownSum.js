@@ -7,7 +7,7 @@ class MySolution {
       return 1;
 
     return num + this.countDownSum(num - 1);
-
+    
   }
 }
 
